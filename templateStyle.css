@@ -3,9 +3,8 @@
 .sidebar{
     background-color: aquamarine;
     display: block;
+    padding-right:-10%;
 }
-
-
  
   ul {
     list-style-type: none;
