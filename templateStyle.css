@@ -1,0 +1,9 @@
+/* template style sheet*/
+
+.sidebar{
+    background-color: aquamarine;
+}
+
+aside {
+    display: block;
+  }
