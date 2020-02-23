@@ -33,3 +33,6 @@
   li{
     margin-bottom: 20px ;
   }
+  ul.help{
+    list-style: none;
+  }
