@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>template</title>
     <link rel = "stylesheet" type = "text/css" href = "templateStyle.css" />
+    <script src="template.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body>
-    <header >
+    <header id = "myHeader" >
         <nav  >
             <div class="topnav">
-                <a href="#">Home</a>
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#">Link 3</a>
+                Banner
+                Buffalo State
             </div>
-            <br>
-            <br>
-            <div class ="subnav">
-               Placeholder
+            <div class="topnav">
+                Placeholder
             </div>
+               
+            
         </nav>
         
     </header>
+
+    <script>
+      
+
+        // When the user scrolls the page, execute myFunction
+        window.onscroll = function() {myFunction()};
+
+        // Get the header
+        var header = document.getElementById("myHeader");
+
+        // Get the offset position of the navbar
+        var sticky = header.offsetTop;
+    </script>
     
     <aside class="sidebar">
         <h2>Contents</h2>
@@ -34,7 +47,6 @@
     </aside>
 
     <main>
-        
         
         <div>
             <h2>Buffalo State Website Administrator’s User Guide</h2>
@@ -551,6 +563,7 @@
             </ul>
         </article>
     </main>
+    <hr>
 
     <footer>
 
