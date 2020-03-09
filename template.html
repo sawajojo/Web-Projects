@@ -17,14 +17,11 @@
             <div>
                 Placeholder
             </div>
-               
             
         </nav>
         
     </header>
 
-  
-    
     <aside id = "side" class="sidebar">
         <h2>Contents</h2>
         <a href="#Login">Login</a>
@@ -573,9 +570,11 @@
       if ($(this).scrollTop() > 100) {
           $('#myHeader').addClass('sticky');
           $('#side').addClass('stickySide');
+          
       } else {
           $('#myHeader').removeClass('sticky');
           $('#side').removeClass('stickySide');
+          
       }
         });
 
@@ -585,7 +584,7 @@
                 const hash = this.hash;
 
                 $('html, body').animate({
-                    scrollTop: $(hash).offset().top-100
+                    scrollTop: $(hash).offset().top-110
                 },
                 800
                 );
