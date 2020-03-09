@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>template</title>
     <link rel = "stylesheet" type = "text/css" href = "templateStyle.css" />
-    <script src="template.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
     <header id = "myHeader" >
@@ -24,24 +23,13 @@
         
     </header>
 
-    <script>
-      
-
-        // When the user scrolls the page, execute myFunction
-        window.onscroll = function() {myFunction()};
-
-        // Get the header
-        var header = document.getElementById("myHeader");
-
-        // Get the offset position of the navbar
-        var sticky = header.offsetTop;
-    </script>
+  
     
-    <aside class="sidebar">
+    <aside id = "side" class="sidebar">
         <h2>Contents</h2>
         <a href="#Login">Login</a>
         <a href="#Create">Create</a>
-        <a href="#Manage/Editing">Manage/Editing</a>
+        <a href="#Manage">Manage/Editing</a>
         <a href="#Files">Files</a>
         <a href="#Help">Get Help</a> 
     </aside>
@@ -353,7 +341,7 @@
                 
         </article>
 
-        <hr id = "Manage/Editing">
+        <hr id = "Manage">
 
         <article>
             <h3>3. Manage/Edit</h3>
@@ -566,7 +554,44 @@
     <hr>
 
     <footer>
-
+        <h1>Buffalo State footer Placeholder</h1>
     </footer>
+    <script> 
+    /*
+    window.onscroll = function() {fixedClassChange()};
+    
+    // Get the header
+    var header = document.getElementById("myHeader");
+    var sidebar =document.getElementById("side");
+   
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+    var stickySide = sidebar.offsetTop;
+
+        */
+        $(window).scroll(function(){
+      if ($(this).scrollTop() > 100) {
+          $('#myHeader').addClass('sticky');
+          $('#side').addClass('stickySide');
+      } else {
+          $('#myHeader').removeClass('sticky');
+          $('#side').removeClass('stickySide');
+      }
+        });
+
+        $('.sidebar a').on('click',function(e){
+            if(this.hash !== ''){
+                e.preventDefault();
+                const hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top-100
+                },
+                800
+                );
+            }
+        })
+       
+    </script>
 </body>
 </html>

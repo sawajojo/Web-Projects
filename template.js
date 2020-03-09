@@ -1,24 +1,19 @@
 
 // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-function myFunction() {
+ // When the user scrolls the page, execute myFunction
+
+
+/*
+function fixedClassChange() {
+
     if (window.pageYOffset > 100) {
      header.classList.add("sticky");
+     sidebar.classList.add("stickySide");
     } else {
     header.classList.remove("sticky");
+    sidebar.classList.remove("stickySide");
      }
 }
-
-$('.sidebar a').on('click',function(e){
-    if(this.hash !== '') {
-        e.preventDefault();
-        const hash = this.hash;
-        $('html, body').animate({
-            scrollTop: $(hash).offset().top
-        }, 800);
-
-    }
-})
-
-
+*/
 
 

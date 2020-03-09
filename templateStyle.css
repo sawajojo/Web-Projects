@@ -11,9 +11,8 @@
   margin-top: 5%;
   height: auto; 
   width: 15%; 
-  z-index: 1; 
+  position: absolute; 
   top: auto;
-  position: fixed;
   left: 0;
   background-color: #111; 
   overflow-x: hidden; 
@@ -55,7 +54,11 @@
   width: 100%;
 }
 .stickySide {
-  position: fixed;
+ position:fixed;
 }
+.sticky + main {
+  padding-top: 102px;
+}
+
 
   
