@@ -1,12 +1,5 @@
 /* template style sheet*/
 
-.topnav{
-  background-color: #333;
-  font-size: 50px;
-  text-align: center;
-}
-
-
 .sidebar{
   margin-top: 5%;
   height: auto; 
@@ -33,6 +26,14 @@
 
   header {
     display: block;
+    background-color: #333;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 100px;
+    position: flex;
+    top: 0;
+    width: 100%;
+  
   }
 
     li{
@@ -49,16 +50,11 @@
 
 .sticky {
   position: fixed;
-  top: 0;
-  left:0;
-  width: 100%;
 }
 .stickySide {
  position:fixed;
 }
-.sticky + main {
-  padding-top: 102px;
-}
+
 
 
   
