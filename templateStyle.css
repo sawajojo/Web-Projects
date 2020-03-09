@@ -5,8 +5,7 @@
   
   height: auto; 
   width: 15%; 
-  margin-top: 15%;
-  position: absolute;
+  display: inline-block;
   left: 0;
   background-color: #111; 
   overflow-x: hidden; 
@@ -31,15 +30,12 @@
     font-size: 30px;
     text-align: center;
     padding: 10px 16px;
-    position: absolute;
+    position: static;
     z-index: 1;
     top: 0;
     left:0;
     width: 100%;
-   border-bottom:blue;
-   border-width: 20px;
-    
-  
+    padding-bottom: 20px;
   }
 
     li{
@@ -49,11 +45,10 @@
     list-style: none;
   }
   
-  main{
+  .content{
   margin-left: 15%; 
   padding: 16px;
-  
-  
+  float: right;
 
   }
 
