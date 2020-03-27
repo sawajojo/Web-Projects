@@ -5,38 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>template</title>
     <link rel = "stylesheet" type = "text/css" href = "templateStyle.css" />
-    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Open+Sans:400,600,700">
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src = "template.js"></script>
 </head>
 <body>
     <header>
-        <nav>
-            <div id = "myHeader" class ="header">
+    
+            <div id = "myHeader" class ="headerClass">
                 <div>
-                    Banner
-                    Buffalo State
+                    <img  class="banner" src="https://collegerelations.buffalostate.edu/sites/collegerelations.buffalostate.edu/files/uploads/Images/Logos%20Web/webcrest-white.png" alt="Buffalo State Banner">
                 </div>
                 <div>
                     Placeholder
                 </div>
             </div>
-        </nav>
         
     </header>
-
-    
-        <div id = "side" class="sidebar">
+    <aside id = "side" class="sidebar">
         <h2>Contents</h2>
         <a href="#Login">Login</a>
         <a href="#Create">Create</a>
         <a href="#Manage">Manage/Editing</a>
         <a href="#Files">Files</a>
         <a href="#Help">Get Help</a> 
-        </div>
-        
-   
+    </aside>
 
     <main>
-        <div class="content">
+        <div id = "main" class="content">
             <div>
                 <h2>Buffalo State Website Administrator’s User Guide</h2>
             </div>
@@ -53,10 +49,10 @@
                     Simply click the edit tab to change your content.<br>
                     Pages can also be edited from the Manage > Pages tab
                     </p>
-                    <hr id = "Create">
+                    
             </article>
-    
-            <article >
+            <hr>
+            <article id = "Create">
                 <h3>2. Create</h3>
                 <section>
                     <h4>Pages</h4>
@@ -342,9 +338,9 @@
                     
             </article>
     
-            <hr id = "Manage">
+            <hr>
     
-            <article>
+            <article id = "Manage">
                 <h3>3. Manage/Edit</h3>
                 <p>The elements of the site can be edited and modified using the “Manage” drop down menu</p>
                 <img src="images/ManageOREdit.JPG" alt="Manage or edit drop down menu image">
@@ -482,8 +478,10 @@
     
                 </section>
             </article>
-            <hr id = "Files">
-            <article>
+
+            <hr>
+
+            <article id = "Files">
                 <h3>4. Files</h3>
                 <img src="images/files.JPG" alt="File explorer example">
                 <br>
@@ -522,9 +520,9 @@
                 </ol>
             </article>
     
-            <hr id = "Help">
+            <hr>
     
-            <article >
+            <article id = "Help">
                 <h3>5. Get Help</h3>
                 <ul class = "help">
                     <li>Daniel Schmidt (technical assistance)</li>
@@ -552,8 +550,6 @@
                 </ul>
             </article>
         </div>
-        
-       
     </main>
     <hr>
 
@@ -561,33 +557,37 @@
         <h1>Buffalo State footer Placeholder</h1>
     </footer>
     <script> 
-   
 
-        $(window).scroll(function(){
-      if ($(this).scrollTop() > 100) {
-          $('#myHeader').addClass('sticky');
-          $('#side').addClass('stickySide');
-          
-      } else {
-          $('#myHeader').removeClass('sticky');
-          $('#side').removeClass('stickySide');
-          
-      }
-        });
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+        $('#myHeader').addClass('sticky');
+        $('#side').addClass('stickySide');
+        var top = $('#myHeader').outerHeight(true) - $('#myHeader').outerHeight();
+        
+        $('#main').css('margin-top',top);
+        $('#side').css('margin-top',top);
 
-        $('.sidebar a').on('click',function(e){
-            if(this.hash !== ''){
-                e.preventDefault();
-                const hash = this.hash;
-                
-                $('html, body').animate({
-                    scrollTop: $(hash).offset().top
-                    
-                },
-                800
-                );
-            }
-        })
+    } else {
+        $('#myHeader').removeClass('sticky');
+        $('#side').removeClass('stickySide');
+        $('#main').css('margin-top',0);
+        $('#side').css('margin-top',0);
+    }
+      });
+
+
+    $('.sidebar a').on('click',function(e){
+        if(this.hash !== ''){
+            e.preventDefault();
+            const hash = this.hash;
+            
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top - $('#myHeader').outerHeight(true)
+            },
+            800
+            );
+        }
+    });
        
     </script>
 </body>

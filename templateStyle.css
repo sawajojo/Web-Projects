@@ -1,41 +1,74 @@
 /* template style sheet*/
+.headerClass {
+  float:none;
+  display: block;
+  background-color: #333;
+  font-size: 30px;
+  text-align: center;
+  padding: 10px 16px;
+  position: static;
+  top: 0;
+  left:0;
+  width: 100%;
+  margin-bottom: 6%;
+}
 
+.banner{
+ margin: auto;
+ max-width: 100%;
+ height: auto;
+}
 
 .sidebar{
-  
-  height: auto; 
   width: 15%; 
-  display: inline-block;
-  left: 0;
   background-color: #111; 
   overflow-x: hidden; 
+  position: relative;
+  float: left;
+  font-size: 1.845 rem;
+  font-family:'Open Sans', sans-serif;
+  color:#896458;
+
 }
- .sidebar a{
+
+.highlight{
+  background: #bb5b02;
+  color: white;
+}
+.sidebar a{
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
   display: block;
+  border-bottom: 1px;
+  border-color: blue;
  }
+ 
+.sidebar a:link, a:visited{
+  color:#896458;
+}
+
+/* selected link */
+.sidebar a:hover {
+  color:white;
+  background-color: #bb5b02 ;
+}
+
+.sidebar a:active {
+  color:white;
+  background-color: #bb5b02 ;
+}
+ 
   ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
 
-  .header {
-    float:left;
-    display: block;
-    background-color: #333;
-    font-size: 30px;
-    text-align: center;
-    padding: 10px 16px;
-    position: static;
-    z-index: 1;
-    top: 0;
-    left:0;
-    width: 100%;
-    padding-bottom: 20px;
+  .banner{
+    height: auto; 
+    width: auto; 
+    max-width: 300px; 
+    max-height: 300px;
   }
 
     li{
@@ -44,20 +77,34 @@
   ul.help{
     list-style: none;
   }
+  body{
+    margin: 0;
+  }
   
   .content{
   margin-left: 15%; 
-  padding: 16px;
-  float: right;
-
+  padding-left: 16px;
+  font-family:'Open Sans', sans-serif;
+  font-size: 1em;
+  }
+  
+  h2{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.845 rem;
+    font-weight: 600;
+    color: black;
   }
 
 .sticky {
-  position: fixed;
+  position:fixed;
+  float: left;
+  
   
 }
 .stickySide {
  position:fixed;
+ float: left;
+ left:0;
 }
 
 
