@@ -39,8 +39,8 @@
   padding: 6px 8px 6px 16px;
   text-decoration: none;
   display: block;
-  border-bottom: 1px;
-  border-color: blue;
+  border-bottom: 1px solid black;
+  
  }
  
 .sidebar a:link, a:visited{
@@ -58,6 +58,11 @@
   background-color: #bb5b02 ;
 }
  
+.active{
+  color:white;
+  background-color: #bb5b02
+
+}
   ul {
     list-style-type: none;
     margin: 0;
@@ -107,6 +112,9 @@
  left:0;
 }
 
-
+.selectedHeader{
+  background-color: #bb5b02;
+  color: white;
+}
 
   
