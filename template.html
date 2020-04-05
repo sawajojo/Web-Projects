@@ -7,7 +7,7 @@
     <link rel = "stylesheet" type = "text/css" href = "templateStyle.css" />
     <link rel="stylesheet" media="all" href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700|Open+Sans:400,600,700">
     <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src = "template.js"></script>
+    <script type="text/javascript" src = "template.js"></script>
 </head>
 <body>
     <header>
@@ -569,10 +569,15 @@
     <hr>
 
     <footer>
-        <h1>Buffalo State footer Placeholder</h1>
+       
+            <div class ="headerClass">
+                <img  class="banner" src="https://collegerelations.buffalostate.edu/sites/collegerelations.buffalostate.edu/files/uploads/Images/Logos%20Web/webcrest-white.png" alt="Buffalo State Banner">
+            </div>
+            
+     
     </footer>
     <script> 
-     var hash2;
+    var hash2;
 
 $(window).scroll(function(){
     if ($(this).scrollTop() > 100) {
@@ -584,6 +589,7 @@ $(window).scroll(function(){
         $('#side').css('margin-top',top);
 
     } else {
+       
         $('#myHeader').removeClass('sticky');
         $('#side').removeClass('stickySide');
         $('#main').css('margin-top',0);
@@ -599,7 +605,7 @@ $(window).scroll(function(){
            
             
             $('html, body').animate({
-                scrollTop: $(hash).offset().top - $('#myHeader').outerHeight(true)
+                scrollTop: $('#side').offset().top - $('#myHeader').outerHeight(true)
             },
             800
             );
@@ -612,9 +618,12 @@ $(window).scroll(function(){
             
             hash2 = hash;
         }
-
-        
     });
+      
+     
+
+
+
 
     
        
