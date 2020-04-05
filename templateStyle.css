@@ -1,34 +1,43 @@
 /* template style sheet*/
 .headerClass {
-  float:none;
-  display: block;
-  background-color: #111;
-  font-size: 30px;
-  text-align: center;
-  padding: 10px 16px;
-  position: static;
+  background-color: black;
+  position: relative;
   top: 0;
-  left:0;
   width: 100%;
   margin-bottom: 6%;
+  overflow: hidden;
 }
-
+.headerClass #menuLinks {
+  display: none;
+  text-align: center;
+}
+.headerClass a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+.headerClass a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 .banner{
- margin: auto;
- max-width: 100%;
- height: auto;
+ float: right;
+ display: block;
 }
 
 .sidebar{
   width: 15%; 
-  
   overflow-x: hidden; 
   position: relative;
   float: left;
   font-size: 1.845 rem;
   font-family:'Open Sans', sans-serif;
   color:#896458;
-
 }
 
 .highlight{
@@ -76,7 +85,7 @@
     max-height: 300px;
   }
 
-    li{
+    main li{
     margin-bottom: 20px ;
   }
   ul.help{
@@ -117,4 +126,6 @@
   color: white;
 }
 
-  
+  .footerClass{
+    text-align: center;
+  }
