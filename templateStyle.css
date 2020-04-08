@@ -6,10 +6,10 @@
   width: 100%;
   margin-bottom: 6%;
   overflow: hidden;
+  display: block;
 }
 .headerClass #menuLinks {
   display: none;
- 
 }
 .headerClass a {
   color: white;
