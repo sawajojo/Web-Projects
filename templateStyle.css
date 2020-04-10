@@ -10,6 +10,7 @@
 }
 .headerClass #menuLinks {
   display: none;
+  border-top: 1px solid #bb5b02;
 }
 .headerClass a {
   color: white;
@@ -38,6 +39,7 @@
   font-size: 1.845 rem;
   font-family:'Open Sans', sans-serif;
   color:#896458;
+  font-weight: bold;
 }
 
 .highlight{
@@ -72,10 +74,10 @@
   background-color: #bb5b02
 
 }
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
   }
 
   .banner{
@@ -85,7 +87,7 @@
     max-height: 300px;
   }
 
-    main li{
+  main li{
     margin-bottom: 20px ;
   }
   ul.help{
@@ -123,15 +125,19 @@
   color: white;
 }
 
-  .footerClass{
+.footerClass{
     text-align: center;
     background-color: #111;
-  }
+}
 
-  .backgroundHighlight{
+.backgroundHighlight{
     background-color: #bb5b02;
     padding: 14px 16px;
-  }
-  #menuLinks{
+}
+#menuLinks{
     background-color: #111;
-  }
+}
+
+footer{
+  color: white;
+}
