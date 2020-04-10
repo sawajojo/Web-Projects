@@ -18,7 +18,7 @@
                     <img  class="banner" src="https://collegerelations.buffalostate.edu/sites/collegerelations.buffalostate.edu/files/uploads/Images/Logos%20Web/webcrest-white.png" alt="Buffalo State Banner">
                 </a>
                     
-                <div id="menuLinks">
+                <div id="menuLinks" class="headerLinks">
                         <a href="#about">about</a>
                         <a href="#admission">admission</a>
                         <a href="#academics">academics</a>
@@ -631,7 +631,6 @@ $(window).scroll(function(){
         if(this.hash !== ''){
             e.preventDefault();
             const hash = this.hash;
-           
             
             $('html, body').animate({
                 scrollTop: $(hash).offset().top - $('#myHeader').outerHeight(true)

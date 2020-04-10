@@ -12,6 +12,8 @@
   display: none;
   border-top: 1px solid #bb5b02;
 }
+
+
 .headerClass a {
   color: white;
   padding: 14px 16px;
@@ -134,8 +136,22 @@ ul {
     background-color: #bb5b02;
     padding: 14px 16px;
 }
-#menuLinks{
+.headerLinks{
     background-color: #111;
+}
+.headerLinks a:link, a:visited{
+  color:#896458;
+}
+
+/* selected link */
+.headerLinks a:hover {
+  color:white;
+  background-color: #bb5b02 ;
+}
+
+.headerLinks a:active {
+  color:white;
+  background-color: #bb5b02 ;
 }
 
 footer{
