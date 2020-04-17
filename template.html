@@ -26,8 +26,7 @@
 
                 <a href="javascript:void(0);" class="icon" onclick="menuDropdown()">
                     <i class="fa fa-bars"></i>
-                </a>
-                    
+                </a>  
             </div>
         
     </header>
@@ -606,9 +605,11 @@
      
     </footer>
 <script> 
+$( document ).ready(function() {
     var hash2;
+    var scrollLink = $('.sidebar a');
 
-$(window).scroll(function(){
+    $(window).scroll(function(){
     if ($(this).scrollTop() > 100) {
         $('#myHeader').addClass('sticky');
         $('#side').addClass('stickySide');
@@ -624,10 +625,10 @@ $(window).scroll(function(){
         $('#main').css('margin-top',0);
         $('#side').css('margin-top',0);
     }
+
       });
 
-
-    $('.sidebar a').on('click',function(e){
+    scrollLink.click('click',function(e){
         if(this.hash !== ''){
             e.preventDefault();
             const hash = this.hash;
@@ -637,6 +638,10 @@ $(window).scroll(function(){
             },
             800
             );
+
+        //Active link switching
+
+         
 
             $(hash).siblings().addClass('selectedHeader');
 
@@ -648,6 +653,8 @@ $(window).scroll(function(){
         }
     });
     
+});
+   
        
 </script>
 
