@@ -179,7 +179,7 @@ color: white;
 .socialMedia{
   background-color: #bb5b02;
   font-size: 20px;
-  padding: 14px 16px;
+  padding: .25rem;
   font-family:'Open Sans', sans-serif;
 }
  
@@ -193,6 +193,7 @@ color: white;
   text-align: center;
   font-size: 1rem;
   color: #f93;
+  padding: .25rem;
  }
 
  .cLinks{
@@ -217,9 +218,9 @@ footer{
 .footerLogo{
   font-family: 'Open Sans',sans-serif;
   color: #fff;
-  margin-left: auto;
-  margin-right: auto;
+  
   display: inline-block;
+  padding: .25rem;
 }
 
 .logoPadding{
