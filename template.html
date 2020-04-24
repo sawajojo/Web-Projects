@@ -14,9 +14,13 @@
     <header>
 
             <div id = "myHeader" class ="headerClass">
-                <a href="https://suny.buffalostate.edu/">
-                    <img  class="banner" src="https://collegerelations.buffalostate.edu/sites/collegerelations.buffalostate.edu/files/uploads/Images/Logos%20Web/webcrest-white.png" alt="Buffalo State Banner">
-                </a>
+
+                <div class ="logoPadding"> 
+                    <a href="https://suny.buffalostate.edu/">
+                        <img  class="banner" src="https://collegerelations.buffalostate.edu/sites/collegerelations.buffalostate.edu/files/uploads/Images/Logos%20Web/webcrest-white.png" alt="Buffalo State Banner">
+                    </a>
+                
+                </div>
                     
                 <div id="menuLinks" class="headerLinks">
                         <a href="#about">about</a>
@@ -27,19 +31,24 @@
                 <a href="javascript:void(0);" class="icon" onclick="menuDropdown()">
                     <i class="fa fa-bars"></i>
                 </a>  
+
+               
             </div>
-        
+            
+            
     </header>
     <aside id = "side" class="sidebar">
-        <h2 class ="backgroundHighlight">Contents</h2>
+        <div>
         <a href="#Login">Login</a>
         <a href="#Create">Create</a>
         <a href="#Manage">Manage/Editing</a>
         <a href="#Files">Files</a>
         <a href="#Help">Get Help</a> 
+        </div>
     </aside>
 
     <main>
+        
         <div id = "main" class="content">
             <div>
                 <h2 class="backgroundHighlight">Buffalo State Website Administrator’s User Guide</h2>
@@ -577,32 +586,43 @@
     <hr>
 
     <footer class = "footerClass">
-            <div class = "backgroundHighlight"> 
-                <ul class="li.footerClass">
-                    <li><a href="https://www.facebook.com/BuffaloStateCollege"></a>Place</li>
-                    <li><a href="https://twitter.com/buffalostate"></a>Place</li>
-                    <li><a href="https://www.youtube.com/buffalostate"></a>Place</li>
-                    <li><a href= "https://www.linkedin.com/company/buffalo-state-college" ></a></li>
-                    <li><a href= "https://kateconwayturner.tumblr.com" ></a></li>
-        
-                     
-                    <li><a href=""></a>Place</li>
+            <div class = "socialMedia"> 
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-tumblr"></a>
+                <span class="socialDir"><a href="/social-media-directory" >Social Media Directory ></a></span>
+            </div>
+            <nav class = "cLinks">
+                <ul>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#ADMISSION & AID">Admission & Aid</a></li>
+                    <li><a href="#Academics">Academics</a></li>
+                    <li><a href="#CampusLife">Campus Life</a></li>
+                    <li><a href="#COMMUNITYENGAGEMENT">Community<br>Engagement</a></li>
+                    <li><a href="#CampusLife">Campus Life</a></li>
                 </ul>
-            </div>
-            <div>
-                <a href="https://suny.buffalostate.edu/"><img src="/images/buffalostatecrest.png"></a>
-                
-                <div>
-                    1300 Elmwood Avenue | Buffalo, NY 
-                    <br>
-                    14222
-                    <br>
-                    (716) 878-4000
+            </nav>
+            <div class = "footerLogo">
+                <div >
+                    <a href="https://suny.buffalostate.edu/"><img src="/images/buffalostatecrest.png"></a>
+                    <div>
+                        1300 Elmwood Avenue | Buffalo, NY 14222
+                        <br>
+                        (716) 878-4000
+                    </div>
                 </div>
-                
+              
             </div>
-            
-     
+            <nav class = "otherLinks">
+                <ul>
+                    <li><a href="#Accessibility">Accessibility ></a></li>
+                    <li><a href="#PrivacyPolicy">Privacy Policy ></a></li>
+                    <li><a href="#SiteInformation">Site Information</a></li>
+                </ul>
+            </nav>    
     </footer>
 <script> 
 $( document ).ready(function() {
@@ -640,8 +660,6 @@ $( document ).ready(function() {
             );
 
         //Active link switching
-
-         
 
             $(hash).siblings().addClass('selectedHeader');
 
