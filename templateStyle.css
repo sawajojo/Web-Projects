@@ -210,6 +210,7 @@ color: white;
  }
 
 footer{
+  font-family: 'Open Sans',sans-serif;
   color: white;
   padding-bottom: 70px;
 }
@@ -250,6 +251,9 @@ footer{
   color: #ff9933;
   text-decoration: none;
  }
+ .footerLogo a:link, .otherLinks a:visited{
+  color: white;
+  text-decoration: none;
  }
 
  /* selected link */
@@ -264,6 +268,10 @@ footer{
 }
 .footerLogo a:hover {
   background-color: #bb5b02 ;
+}
+.cLinks a:hover {
+  color: white;
+  background-color: #bb5b02 
 }
 .otherLinks a:hover {
   color: white;
