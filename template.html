@@ -37,13 +37,13 @@
             
             
     </header>
-    <aside id = "side" class="sidebar">
+    <nav id = "side" class="sidebar">
         <a href="#Login">Login</a>
         <a href="#Create">Create</a>
         <a href="#Manage">Manage/Editing</a>
         <a href="#Files">Files</a>
         <a href="#Help">Get Help</a> 
-    </aside>
+    </nav>
 
     <main>
         
@@ -581,10 +581,9 @@
             
         </div>
     </main>
-    <hr>
 
     <footer class = "footerClass">
-            <div class = "socialMedia"> 
+            <div class = "socialMedia footerMobile"> 
                 <a title = "Buffalo State College Facebook" href="https://www.facebook.com/BuffaloStateCollege" class="fa fa-facebook"></a>
                 <a title = "Buffalo State College Twitter" href="https://twitter.com/buffalostate" class="fa fa-twitter"></a>
                 <a title = "Buffalo State College Instagram" href="https://www.instagram.com/buffalostate/" class="fa fa-instagram"></a>
@@ -593,41 +592,47 @@
                 <a title = "Buffalo State College Tumblr" href="https://kateconwayturner.tumblr.com/" class="fa fa-tumblr"></a>
                 <span class="socialDir"><a href="/social-media-directory" >Social Media Directory ></a></span>
             </div>
-            <nav class = "cLinks">
-                <ul>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#ADMISSION&AID">Admission & Aid</a></li>
-                    <li><a href="#Academics">Academics</a></li>
-                    <li><a href="#CampusLife">Campus Life</a></li>
-                    <li><a href="#COMMUNITYENGAGEMENT">Community<br>Engagement</a></li>
-                    <li><a href="#CampusLife">Campus Life</a></li>
-                </ul>
-            </nav>
-            <div class = "footerLogo">
-                <div>
-                    <a href="https://suny.buffalostate.edu/"><img alt = "Buffalo State Crest" src="/images/buffalostatecrest.png"></a>
-                    <div>
-                        1300 Elmwood Avenue | Buffalo, NY 14222
-                        <br>
-                        <a title="Call Buffalo State" href="tel:+17168784000">
-                            (716) 878-4000
-                          </a>
-                
+
+            <div class="buffStateInfo">
+                <div class ="buffCon db-ns">
+                    <nav class = "cLinks footerMobile">
+                        <ul>
+                            <li><a href="#About">About</a></li>
+                            <li><a href="#ADMISSION&AID">Admission & Aid</a></li>
+                            <li><a href="#Academics">Academics</a></li>
+                            <li><a href="#CampusLife">Campus Life</a></li>
+                            <li><a href="#COMMUNITYENGAGEMENT">Community Engagement</a></li>
+                            <li><a href="#CampusLife">Campus Life</a></li>
+                        </ul>
+                    </nav>
+                   
+                    <div class = "footerLogo footerMobile dn-ns">
+                        <div>
+                            <a href="https://suny.buffalostate.edu/"><img alt = "Buffalo State Crest" src="/images/buffalostatecrest.png"></a>
+                            <div>
+                                1300 Elmwood Avenue | Buffalo, NY 14222
+                                <br>
+                                <a title="Call Buffalo State" href="tel:+17168784000">
+                                    (716) 878-4000
+                                  </a>
+                        
+                            </div>
+                        </div>
+                      
                     </div>
+                    <nav class = "otherLinks footerMobile">
+                        <ul>
+                            <li><a href="#Accessibility">Accessibility ></a></li>
+                            <li><a href="#PrivacyPolicy">Privacy Policy ></a></li>
+                            <li><a href="#SiteInformation">Site Information ></a></li>
+                        </ul>
+                        <p>
+                            © 2020 Buffalo State.<br>
+                            All rights Reserved.
+                        </p>  
+                    </nav>
                 </div>
-              
-            </div>
-            <nav class = "otherLinks">
-                <ul>
-                    <li><a href="#Accessibility">Accessibility ></a></li>
-                    <li><a href="#PrivacyPolicy">Privacy Policy ></a></li>
-                    <li><a href="#SiteInformation">Site Information ></a></li>
-                </ul>
-                <p>
-                    © 2020 Buffalo State.<br>
-                    All rights Reserved.
-                </p>  
-            </nav>
+                </div>
               
     </footer>
 <script> 
@@ -682,8 +687,8 @@ $( document ).ready(function() {
        
 </script>
 
-    <script>
-    function menuDropdown() {
+<script>
+   function menuDropdown() {
     var x = document.getElementById("menuLinks");
     if (x.style.display === "block") {
       x.style.display = "none";
@@ -691,6 +696,6 @@ $( document ).ready(function() {
       x.style.display = "block";
     }
   }
-    </script>
+</script>
 </body>
 </html>
